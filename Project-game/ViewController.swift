@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         ac.addAction(UIAlertAction(title: "Сontinue", style: .default, handler: askQuestion))
         present(ac, animated: true)
         
-        //else if sumTapped == 10 {
+        //else if sumTapped == 10 { // info for push about 10 try
         }
 }
 
