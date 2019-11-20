@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         askQuestion()
         
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
     func askQuestion(action: UIAlertAction! = nil) {
         countries.shuffle()
