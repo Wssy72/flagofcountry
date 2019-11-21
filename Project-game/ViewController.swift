@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         askQuestion()
         
-        // Do any additional setup after loading the view
+        // Do any additional setup after loading the view - test
     }
     func askQuestion(action: UIAlertAction! = nil) {
         countries.shuffle()
@@ -53,17 +53,18 @@ class ViewController: UIViewController {
             score += 1
             sumTapped += 1
             
-        } else {
+        }  else {
             title = "Wrong, this is flag \(countries[correctAnswer])."
             self.score -= 1
             sumTapped += 1
             }
-        //title = "Your made 10 attempts"
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Сontinue", style: .default, handler: askQuestion))
-        present(ac, animated: true)
         
-        //else if sumTapped == 10 { // info for push about 10 try
+        if sumTapped == 10 { // info for push about 10 try
+        title = "Your made 10 attempts"
+          let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+          ac.addAction(UIAlertAction(title: "Сontinue", style: .default, handler: askQuestion))
+          present(ac, animated: true)
+        }
         }
 }
 
