@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cjp-FO-Q2S">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cjp-FO-Q2S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,21 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wf-V1-ydV">
-                                <rect key="frame" x="107" y="232" width="200" height="100"/>
+                                <rect key="frame" x="107" y="268" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Tc-s7-FQ6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgU-zs-2A2">
-                                <rect key="frame" x="107" y="372" width="200" height="100"/>
+                                <rect key="frame" x="107" y="408" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0NL-GF-5iF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0i-Ia-2gy">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <rect key="frame" x="107" y="128" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdz-8n-C4T"/>
@@ -42,10 +40,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="N0i-Ia-2gy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="ESF-uX-KBW"/>
+                            <constraint firstItem="N0i-Ia-2gy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ESF-uX-KBW"/>
                             <constraint firstItem="CgU-zs-2A2" firstAttribute="centerX" secondItem="1Wf-V1-ydV" secondAttribute="centerX" id="RMn-oC-Y6n"/>
                             <constraint firstItem="N0i-Ia-2gy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hWZ-Ij-EK6"/>
-                            <constraint firstItem="1Wf-V1-ydV" firstAttribute="top" secondItem="N0i-Ia-2gy" secondAttribute="bottom" constant="32" id="jBc-WP-Fb9"/>
+                            <constraint firstItem="1Wf-V1-ydV" firstAttribute="top" secondItem="N0i-Ia-2gy" secondAttribute="bottom" constant="40" id="jBc-WP-Fb9"/>
                             <constraint firstItem="CgU-zs-2A2" firstAttribute="top" secondItem="1Wf-V1-ydV" secondAttribute="bottom" constant="40" id="seD-Bx-dd2"/>
                             <constraint firstItem="1Wf-V1-ydV" firstAttribute="centerX" secondItem="N0i-Ia-2gy" secondAttribute="centerX" id="vW8-RS-3E2"/>
                         </constraints>
