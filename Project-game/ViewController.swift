@@ -59,12 +59,15 @@ class ViewController: UIViewController {
             sumTapped += 1
             }
         
-        if sumTapped == 10 { // info for push about 10 try
+        if sumTapped == 11 {
+        sumTapped = 0
         title = "Your made 10 attempts"
-          let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-          ac.addAction(UIAlertAction(title: "Сontinue", style: .default, handler: askQuestion))
-          present(ac, animated: true)
+        
+         let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+         ac.addAction(UIAlertAction(title: "Сontinue", style: .default, handler: askQuestion))
+        present(ac, animated: true)
         }
-        }
+        askQuestion()
+    }
 }
 
