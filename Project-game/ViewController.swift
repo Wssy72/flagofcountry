@@ -34,6 +34,8 @@ class ViewController: UIViewController {
         
         askQuestion()
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(scoreItem))
+        
         // Do any additional setup after loading the view - test
     }
     func askQuestion(action: UIAlertAction! = nil) {
@@ -63,11 +65,17 @@ class ViewController: UIViewController {
         sumTapped = 0
         title = "Your made 10 attempts"
         
-         let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-         ac.addAction(UIAlertAction(title: "Сontinue", style: .default, handler: askQuestion))
+        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Сontinue", style: .default, handler: askQuestion))
         present(ac, animated: true)
         }
         askQuestion()
     }
+    @objc func scoreItem() {
+    let acTwo = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+    acTwo.addAction(UIAlertAction(title: "Ok", style: .default, handler: askQuestion))
+    present(acTwo, animated: true)
+    }
+    
 }
 
